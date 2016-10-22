@@ -1,0 +1,61 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-around;
+  background-image: url('/assets/brick.jpg');
+  background-size: 900px;
+  height: 250px;
+}
+
+.avatar {
+  height: 380px;
+  top: -20px;
+  position: relative;
+}
+
+.bio {
+  box-shadow: 3px 3px 3px 3px;
+  background-color: floralwhite;
+  width: 500px;
+  position: absolute;
+  right: 170px;
+  top: 200px;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+}
+
+.projects {
+  padding: 80px 0px 0px 0px;
+}
+
+.skills {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding-top: 150px;
+}
+/*.skills {
+    float: right;
+    position: absolute;
+    right: 100px;
+    padding: 100px 100px 0px 0px;
+}*/
+
+.projectImg {
+  height: 200px;
+  border-radius: 5px;
+}
+
+.firebaseImg {
+  height: 300px;
+  border-radius: 5px
+}
