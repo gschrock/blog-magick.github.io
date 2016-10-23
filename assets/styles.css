@@ -1,12 +1,51 @@
 body {
   margin: 0;
   padding: 0;
-  background-color: #e4a851;
+  background-color:  #fdfff0;
+  font-family: 'Roboto', sans-serif;
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-around;
+  background-color: #fdfff0;
+  background-size: 900px;
+  height: 250px;
+}
+
+.avatar {
+  height: 380px;
+  position: relative;
+  left: 50px;
+}
+
+.description {
+  font-size: 20px;
+}
+
+.bio {
+  box-shadow: 3px 3px 3px 3px;
+  background-color: #fff3f0;
+  width: 500px;
+  position: absolute;
+  right: 170px;
+  top: 200px;
+}
+
+.bio > p {
+  padding: 0px 10px 0px 10px;
 }
 
 h2 {
   font-size: 54px;
   text-align: center;
+  margin: 40px 0px 0px 0px;
+}
+
+.projects > h2 {
+  margin: 80px 0px 0px 0px;
 }
 
 p.lead {
@@ -34,36 +73,26 @@ hr {
   margin-top: 20px;
   margin-bottom: 20px;
   border: 0;
-  border-top: 1px solid #eee;
+  border-top: 1px solid black;
 }
 
-.header {
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  justify-content: space-around;
-  background-color: #51e4a8;
-  background-size: 900px;
-  height: 250px;
+a {
+  text-decoration: none;
+  color: black;
 }
 
-.avatar {
-  height: 380px;
-  top: -20px;
-  position: relative;
+.content {
+  max-width: 1280px;
+  padding: 10px 180px 10px 180px;
 }
 
-.bio {
-  box-shadow: 3px 3px 3px 3px;
-  background-color: #518de4;
-  width: 500px;
-  position: absolute;
-  right: 170px;
-  top: 200px;
+.skills {
+  background-color: #eef3e0;
+  padding-bottom: 40px;
 }
 
-.projects .row > div {
-  margin-bottom: 30px;
+.footer {
+  background-color: #727878;
 }
 
 .container {
@@ -76,9 +105,9 @@ hr {
   width: 50%;
 }
 
-/*.project {
-  width: 100%;
-}*/
+.projects > div {
+  margin-bottom: 30px;
+}
 
 .projects figure {
   position: relative;
@@ -118,7 +147,7 @@ figure.effect {
 }
 
 figure.effect:hover {
-  background: #22A39F;
+  background: #F75C5C;
 }
 
 figure.effect img {
@@ -202,44 +231,51 @@ figure.effect:hover p {
     width: 100%;
 }
 
-.projects figure .icon {
-  background: #22A39F;
-  position: absolute;
-  top: 0px;
-  right: 0px;
-  width: 48px;
-  height: 48px;
-}
-
-.icon {
-  display: inline-block;
-  background: url("/assets/avatar.png") no-repeat;
-  height: 32px;
-  width: 32px;
-}
-
-.projects figure .icon span {
-  font-size: 18px;
-  line-height: 18px;
-  padding: 15px;
-}
-
-.content {
-/*  display: flex;
-  flex-direction: row;*/
-  max-width: 1280px;
-  padding: 40px 180px 40px 180px;
-}
-
 .projects {
   padding: 80px 0px 0px 0px;
 }
 
-.skills {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  padding-top: 150px;
+/**
+ * Skills
+ */
+
+ul.no-bullets {
+  list-style-type: none;
+  margin: 0px;
+  padding: 0px;
 }
+
+.container ul > li .ability-title {
+  display: inline-block;
+  width: 60%;
+}
+
+.container ul > li {
+  padding: 5px 40px 0px 40px;
+}
+
+.container ul > li .ability-score {
+  float: right;
+}
+
+.container ul > li .ability-score .fa-star {
+  color: #F75C5C;
+}
+
+.container ul > li .ability-score .empty {
+  color: #C6C6D1;
+}
+
+.container ul > li .ability-score .fa-star {
+  font-size: 14px;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.container ul > li:hover .ability-score .fa-star { 
+  margin-left: 2px; 
+} 
 
 
