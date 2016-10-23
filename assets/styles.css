@@ -93,6 +93,10 @@ a {
 
 .footer {
   background-color: #727878;
+  color: floralwhite;
+  font-size: 10px;
+  display: flex;
+  justify-content: center;
 }
 
 .container {
