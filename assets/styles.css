@@ -93,6 +93,11 @@ a {
   margin-bottom: 30px;
 }
 
+figure {
+  height: 270px;
+  width: 85%;
+}
+
 .projects figure {
   position: relative;
   overflow-x: hidden;
@@ -121,7 +126,6 @@ a {
 h3 {
   font-size: 28px;
 }
-
 
 /**
  * Effect
