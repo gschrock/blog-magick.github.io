@@ -93,8 +93,11 @@ a {
   margin-bottom: 30px;
 }
 
+
+
 figure {
-  height: 270px;
+  height: 85%;
+/*  height: 270px;*/
   width: 85%;
 }
 
