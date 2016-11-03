@@ -195,7 +195,7 @@ figure.effect:hover h3::after {
 }
 
 figure.effect p {
-  padding-top: 10px;
+/*  padding-top: 10px;*/
   opacity: 0;
   -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
   transition: opacity 0.35s, transform 0.35s;
