@@ -1,3 +1,16 @@
+<!-- Include instructions on clear and creating a new post here: -->
+
+When I’m working on a draft for a blog post, I create a new branch and when I’m ready to publish, I merge it with develop, then add/commit/push and npm run deploy.
+
+<!--
+Blog post ideas:
+- Wild Magic-user
+- Psionicist
+- Retrospective on running an open table group, tools we use (X-card, etc.)
+- Sharing tools used in an open table group (how to build a bot, create slack workspace, etc.)
+- On OSR style play and concerns of game balance, module balance, encounter balance, etc.
+-->
+
 <!-- AUTO-GENERATED-CONTENT:START (STARTER) -->
 <p align="center">
   <a href="https://www.gatsbyjs.org">
