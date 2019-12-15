@@ -1,5 +1,6 @@
 import { graphql, Link } from "gatsby";
 import React from "react";
+import styled from "styled-components";
 import Bio from "../components/bio";
 import Layout from "../components/layout";
 import SEO from "../components/seo";
@@ -25,9 +26,12 @@ class BlogIndex extends React.Component {
                     marginBottom: rhythm(1 / 4)
                   }}
                 >
-                  <Link style={{ boxShadow: `none` }} to={node.fields.slug}>
+                  <StyledLink
+                    style={{ boxShadow: `none` }}
+                    to={node.fields.slug}
+                  >
                     {title}
-                  </Link>
+                  </StyledLink>
                 </h3>
                 <small>{node.frontmatter.date}</small>
               </header>
@@ -45,6 +49,10 @@ class BlogIndex extends React.Component {
     );
   }
 }
+
+const StyledLink = styled(Link)`
+  color: #e00e7f;
+`;
 
 export default BlogIndex;
 

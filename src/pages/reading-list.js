@@ -12,7 +12,7 @@ class ReadingList extends React.Component {
     const siteTitle = data.site.siteMetadata.title;
     const books = data.site.siteMetadata.books;
     const finishedBooks = data.site.siteMetadata.finishedBooks;
-    console.log(books, finishedBooks);
+
     return (
       <Layout location={this.props.location} title={siteTitle}>
         <SEO title="Reading list" />

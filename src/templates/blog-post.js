@@ -1,5 +1,6 @@
 import { graphql, Link } from "gatsby";
 import React from "react";
+import styled from "styled-components";
 import Bio from "../components/bio";
 import Layout from "../components/layout";
 import SEO from "../components/seo";
@@ -37,6 +38,11 @@ class BlogPostTemplate extends React.Component {
               {post.frontmatter.date}
             </p>
           </header>
+          <hr
+            style={{
+              marginBottom: rhythm(1)
+            }}
+          />
           <section dangerouslySetInnerHTML={{ __html: post.html }} />
           <hr
             style={{
@@ -60,16 +66,16 @@ class BlogPostTemplate extends React.Component {
           >
             <li>
               {previous && (
-                <Link to={previous.fields.slug} rel="prev">
+                <StyledLink to={previous.fields.slug} rel="prev">
                   ← {previous.frontmatter.title}
-                </Link>
+                </StyledLink>
               )}
             </li>
             <li>
               {next && (
-                <Link to={next.fields.slug} rel="next">
+                <StyledLink to={next.fields.slug} rel="next">
                   {next.frontmatter.title} →
-                </Link>
+                </StyledLink>
               )}
             </li>
           </ul>
@@ -78,6 +84,10 @@ class BlogPostTemplate extends React.Component {
     );
   }
 }
+
+const StyledLink = styled(Link)`
+  color: #e00e7f;
+`;
 
 export default BlogPostTemplate;
 
