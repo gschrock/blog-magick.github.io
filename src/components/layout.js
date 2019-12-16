@@ -1,5 +1,6 @@
 import { Link } from "gatsby";
 import React from "react";
+import styled from "styled-components";
 import { rhythm, scale } from "../utils/typography";
 
 class Layout extends React.Component {
@@ -61,10 +62,14 @@ class Layout extends React.Component {
       >
         <header>{header}</header>
         <main>{children}</main>
-        <footer>© {new Date().getFullYear()} Gabriel Schrock</footer>
+        <Footer>© {new Date().getFullYear()} Gabriel Schrock</Footer>
       </div>
     );
   }
 }
+
+const Footer = styled.footer`
+  font-size: 10px;
+`;
 
 export default Layout;
