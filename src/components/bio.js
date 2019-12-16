@@ -59,8 +59,9 @@ const Bio = () => {
           }}
         />
         <Text>
-          Written by <strong>{author}</strong> who lives and works in Portland,
-          Oregon.
+          "No matter what your age or your life path…it is not too late or too
+          egotistical or too selfish or too silly to work on your creativity." ―
+          Julia Cameron
         </Text>
       </div>
       <LinkContainer>
@@ -84,6 +85,7 @@ const Bio = () => {
 const Text = styled.p`
   margin: 0;
   padding: 0;
+  font-size: 14px;
 `;
 
 const LinkContainer = styled.div`
