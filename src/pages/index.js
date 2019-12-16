@@ -57,6 +57,10 @@ class BlogIndex extends React.Component {
 
 const StyledLink = styled(Link)`
   color: #e00e7f;
+
+  * {
+    color: #e00e7f;
+  }
 `;
 
 export default BlogIndex;

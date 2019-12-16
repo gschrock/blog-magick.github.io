@@ -43,7 +43,10 @@ class BlogPostTemplate extends React.Component {
               marginBottom: rhythm(1)
             }}
           />
-          <section dangerouslySetInnerHTML={{ __html: post.html }} />
+          <section
+            className={this.props.className}
+            dangerouslySetInnerHTML={{ __html: post.html }}
+          />
           <hr
             style={{
               marginBottom: rhythm(1)
@@ -89,7 +92,14 @@ const StyledLink = styled(Link)`
   color: #e00e7f;
 `;
 
-export default BlogPostTemplate;
+const StyledBlogPostTemplate = styled(BlogPostTemplate)`
+  p > a {
+    color: #e00e7f;
+    box-shadow: none;
+  }
+`;
+
+export default StyledBlogPostTemplate;
 
 export const pageQuery = graphql`
   query BlogPostBySlug($slug: String!) {
