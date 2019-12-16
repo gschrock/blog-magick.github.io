@@ -16,7 +16,8 @@ Blog goals:
 -->
 
 1.  **Notes on Developing**
-    When I’m working on a draft for a blog post, I create a new branch from the "develop" branch.
+    When I’m working on a draft for a blog post, I create a new branch from the "develop" branch (think of this as the actual master branch of this repo).
+
     When I’m ready to publish the draft, I merge it with the "develop" branch, then add/commit/push and npm run deploy. npm run deploy will cause a GitHub pages build for the master branch, which is used for the deployed site.
 
     Site runs at `http://localhost:8000`!

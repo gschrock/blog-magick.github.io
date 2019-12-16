@@ -59,7 +59,8 @@ const Bio = () => {
           }}
         />
         <Text>
-          Written by <strong>{author}</strong> who lives and works in Portland.
+          Written by <strong>{author}</strong> who lives and works in Portland,
+          Oregon.
         </Text>
       </div>
       <LinkContainer>
