@@ -1,7 +1,5 @@
 <!--
 Blog post ideas:
-- [] Wild Magic-user
-- [] Psionicist
 - [] Retrospective on running an open table group, tools we use (X-card, etc.)
 - [] Sharing tools used in an open table group (how to build a bot, create slack workspace, etc.)
 - [] On OSR style play and concerns of game balance, module balance, encounter balance, etc.
