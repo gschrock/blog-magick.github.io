@@ -13,10 +13,10 @@ module.exports = {
       sellerUrl: `https://www.amazon.com/You-Want-Talk-About-Race/dp/1580056776`
     },
     {
-      title: `Gyo`,
+      title: `Uzumaki`,
       author: `Junji Ito`,
-      imgUrl: `https://images-na.ssl-images-amazon.com/images/I/5186%2BC3pJCL.jpg`,
-      sellerUrl: `https://www.amazon.com/dp/B07HBPX5ZS/ref=rdr_kindle_ext_tmb`
+      imgUrl: `https://images-na.ssl-images-amazon.com/images/I/51Ef1f4UnqL._SX337_BO1,204,203,200_.jpg`,
+      sellerUrl: `https://www.amazon.com/Uzumaki-3-1-Deluxe-vols/dp/1421561328`
     },
     {
       title: `Delicious in Dungeon`,
@@ -29,6 +29,13 @@ module.exports = {
     {
       year: "2019",
       books: [
+        {
+          title: `Gyo`,
+          author: `Junji Ito`,
+          imgUrl: `https://images-na.ssl-images-amazon.com/images/I/5186%2BC3pJCL.jpg`,
+          sellerUrl: `https://www.amazon.com/dp/B07HBPX5ZS/ref=rdr_kindle_ext_tmb`,
+          review: `😱🦈👍`
+        },
         {
           title: `Dune`,
           author: `Frank Herbert`,
